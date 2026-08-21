@@ -83,8 +83,6 @@ com.dmariani.weathermvvm
 └── WeatherApp.kt
 ```
 
-**Layering rule:** `domain` has no Android or reactive-library dependencies — it's pure Kotlin (model classes + repository interface only). `data` depends on `domain` and implements the repository interface. `ui` depends on `domain` only (never imports from `data` directly).
-
 ## Build Sequence
 
 1. Domain models + repository interface
