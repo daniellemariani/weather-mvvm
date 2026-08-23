@@ -63,6 +63,4 @@ class WeatherRepositoryImpl @Inject constructor(
                     .switchIfEmpty(Single.error(error)) // cache doesn't exist, return error
             }
     }
-
-
 }
