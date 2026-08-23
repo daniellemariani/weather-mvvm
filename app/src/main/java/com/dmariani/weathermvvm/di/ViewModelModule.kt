@@ -19,6 +19,10 @@ import kotlin.reflect.KClass
 @MapKey
 annotation class ViewModelKey(val value: KClass<out ViewModel>)
 
+/**
+ * Multibinds WeatherViewModel into the Map<Class<out ViewModel>, Provider<ViewModel>>
+ * that ViewModelFactory reads from, keyed via @ViewModelKey.
+ */
 @Module
 abstract class ViewModelModule {
 

@@ -8,6 +8,10 @@ import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 import javax.inject.Singleton
 
+/**
+ * Provides the Retrofit instance (Open-Meteo, Gson conversion, RxJava3 call adapter)
+ * and the WeatherApi built from it. All network-related bindings live here.
+ */
 @Module
 object NetworkModule {
 

@@ -8,6 +8,9 @@ import dagger.Module
 import dagger.Provides
 import javax.inject.Singleton
 
+/**
+ * Provides the Room WeatherDatabase and the WeatherDao derived from it.
+ */
 @Module
 object DatabaseModule {
 
