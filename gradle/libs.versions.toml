@@ -11,7 +11,7 @@ rxjava = "3.1.8"
 rxandroid = "3.0.2"
 retrofit = "2.11.0"
 room = "2.6.1"
-dagger = "2.51"
+dagger = "2.59"
 appcompat = "1.7.0"
 androidx-constraintlayout = "2.2.2"
 
