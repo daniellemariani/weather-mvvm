@@ -17,6 +17,7 @@ androidx-constraintlayout = "2.2.2"
 androidx-recyclerview = "1.4.0"
 androidx-activity-ktx = "1.11.0"
 material = "1.13.0"
+core-testing = "2.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -37,6 +38,7 @@ room-compiler = { group = "androidx.room", name = "room-compiler", version.ref =
 room-rxjava3 = { group = "androidx.room", name = "room-rxjava3", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-core-testing = { group = "androidx.arch.core", name = "core-testing", version.ref = "core-testing" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
 androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
