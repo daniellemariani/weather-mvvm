@@ -20,6 +20,7 @@ class WeatherViewModel @Inject constructor(private val repository: WeatherReposi
     ViewModel() {
 
     private var lastCity: City? = null
+    val currentCity: City? get() = lastCity
 
     private val _weather = MutableLiveData<Weather>()
     val weather: LiveData<Weather> get() = _weather
