@@ -1,6 +1,7 @@
 package com.dmariani.weathermvvm.di
 
 import androidx.lifecycle.ViewModel
+import com.dmariani.weathermvvm.ui.main.WeatherViewModel
 import dagger.Binds
 import dagger.MapKey
 import dagger.Module
