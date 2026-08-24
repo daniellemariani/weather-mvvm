@@ -13,6 +13,6 @@ interface WeatherApi {
     @GET("v1/forecast")
     fun getWeather(@Query("latitude") lat: Double,
                    @Query("longitude") lon: Double,
-                   @Query("current") current: String = "temperature_2m, weather_code, is_day"
+                   @Query("current") current: String = "temperature_2m,weather_code,is_day"
     ): Single<WeatherResponse>
 }
