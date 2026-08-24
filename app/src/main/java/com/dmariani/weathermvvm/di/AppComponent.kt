@@ -1,7 +1,7 @@
 package com.dmariani.weathermvvm.di
 
 import android.app.Application
-import com.dmariani.weathermvvm.MainActivity
+import com.dmariani.weathermvvm.ui.main.MainActivity
 import dagger.BindsInstance
 import dagger.Component
 import javax.inject.Singleton
