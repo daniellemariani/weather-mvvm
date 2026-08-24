@@ -8,7 +8,9 @@ import com.dmariani.weathermvvm.domain.model.City
 import com.dmariani.weathermvvm.domain.model.Weather
 import com.dmariani.weathermvvm.domain.repository.WeatherRepository
 import io.reactivex.rxjava3.core.Flowable
+import io.reactivex.rxjava3.core.Scheduler
 import io.reactivex.rxjava3.core.Single
+import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
 
 class WeatherRepositoryImpl @Inject constructor(
@@ -39,10 +41,11 @@ class WeatherRepositoryImpl @Inject constructor(
                 }
             }
             .switchIfEmpty(fetchAndCacheWeather(city)) // call if cache request is empty
+            .subscribeOn(Schedulers.io())
     }
 
     override fun observeRecentSearches(limit: Int): Flowable<List<String>> {
-        return dao.recentCities()
+        return dao.recentCities().subscribeOn(Schedulers.io())
     }
 
     private fun fetchAndCacheWeather(city: City): Single<Weather> {
