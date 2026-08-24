@@ -11,6 +11,11 @@ import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import javax.inject.Inject
 
+/**
+ * Exposes weather state as independent LiveData properties. Persistent state
+ * (weather, error) is separated from the one-time snackbarEvent, which uses
+ * Event<T> to avoid re-firing on configuration changes.
+ */
 class WeatherViewModel @Inject constructor(private val repository: WeatherRepository) :
     ViewModel() {
 
